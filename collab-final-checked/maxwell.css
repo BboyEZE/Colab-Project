@@ -1,0 +1,688 @@
+* {
+	font-family: Verdana, Arial, Sans-Serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	/*background-color: #fff;*/
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 15px;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+}
+/*************************HEADER STYLES*************************/
+.header {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #fff;
+	padding: 0 55px;
+	/*height: 20%;*/
+}
+
+.logo a{
+	display: block;
+}
+
+.logo a img {
+	padding: 20px;
+	display: block;
+	height: 100%
+
+}
+
+/************************DESKTOP NAV BAR STYLES*******************/
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	
+}
+
+.menu {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-items: center;
+	z-index: 1;
+}
+
+.menu li{
+	list-style-type: none;
+}
+
+.menu li a{
+	color: #000;
+	text-decoration: none;
+	display: block;
+	padding: 35px 25px 25px 25px;
+	font-size: 16px;
+	line-height: 1;
+	text-align: center;
+}
+
+.current {
+	box-shadow: 0 -5px 0px #11823b inset;
+	color: #000;
+	display: block;
+	padding: 35px 25px 35px 25px;
+	font-size: 16px;
+	line-height: 1;
+	text-align: center;
+}
+
+.current_index {
+	box-shadow: 0 -5px 0px #11823b inset;
+	color: #000;
+	display: block;
+	padding: 35px 25px 35px 25px;
+	font-size: 16px;
+	line-height: 2;
+	text-align: center;
+}
+
+.menu li a:hover{
+	box-shadow: 0 -5px 0px 	#48bf53 inset;
+	/*500px 0 0 rgba(225,225,225,0.03) inset;*/
+	padding: 35px 25px 35px 25px;
+}
+
+/*********************************************HAMBURGER MENU FOR MOBILE STYLES*******************************/
+.hamburger {
+	position: relative;
+	width: 30px;
+	height: 4px;
+	background-color: #000;
+	border-radius: 10px;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.hamburger:before, .hamburger:after{
+	content: "";
+	position: absolute;
+	height: 4px;
+	right: 0;
+	background-color: #000;
+	border-radius: 10px;
+}
+
+.hamburger:before {
+	top: -10px;
+	width: 20px;
+}
+
+.hamburger:after {
+	top: 10px;
+	width: 25px;
+}
+
+.toggle-menu {
+	position: absolute;
+	width: 30px;
+	height: 100%;
+	z-index: 3;
+	cursor: pointer;
+	opacity: 0;
+}
+
+.hamburger, .toggle-menu {
+	display: none;
+}
+
+.navigation input:checked ~ .hamburger {
+	background: transparent;
+}
+
+.navigation input:checked ~ .hamburger:before{
+	top: 0;
+	width: 30px;
+}
+
+.navigation input:checked ~ .hamburger:after{
+	top: 0;
+	width: 30px;
+}
+
+.navigation input:checked ~ .menu {
+	right: 0;
+	box-shadow: -20px 0 40px rgba(0,0,0,0.3);
+}
+
+/***************************************************MAIN CONTENT STYLES***********************************/
+main {
+	margin: 20px 35px 0 35px;
+	}
+	
+/**************************************************HERO IMAGE SYTLES****************************************/
+
+#hero {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.342), rgba(0, 0, 0, 0.342)),
+    url("cool_5.jpg")
+      no-repeat center bottom / cover;
+  color: whitesmoke;
+}
+
+.container {
+  width: 90%;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  /*   text-align: center; */
+}
+
+.info > h1 {
+	font-family: 'Trebuchet MS', Verdana;
+  font-size: 3rem;
+  /* text-transform: uppercase; */
+  /*margin-bottom: 1rem;*/
+  text-align: left;
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 1em;
+}
+
+.info > h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.info > p {
+  font-size: 1.2rem;
+  max-width: 50%;
+}
+
+.info > a {
+  text-decoration: none;
+  display: inline-block;
+  background-color: white;
+  border-radius: 4px;
+  font-size: 1.8rem;
+  padding: 0.5em 2em;
+  margin-top: 2rem;
+  color: #5f2568;
+}
+
+/*.index {
+	/*background: #000 url(cool_2.jpg) no-repeat center top fixed;
+	overflow: hidden;
+	;
+	height: 50%;
+	display: block;
+}*/
+
+/*******************************************INTRO INFO STYLES******************************/
+p {
+	margin: 0;
+	}
+
+h1 {
+	font-family: 'Trebuchet MS', 'Times New Roman', Verdana;
+	font-size: 3em;
+	font-weight: bold;
+	word-spacing: 7px;
+	text-align: center;
+	margin: 0 0 .8em 0;
+	}
+	
+h2 {
+	font-family: 'Courier', 'Arial Narrow', Arial, sans-serif;
+	font-weight: bold;
+}
+
+	#producth2{
+		text-align: center;
+		font-size: 2em;
+	}
+/****************************************TEXT BLURB SYTLES*********************************/
+#panels {
+	margin: 30px 0 0 0;
+	}
+
+#panels nav {
+	margin-bottom: -1px;
+	}
+
+#panels nav::after {
+	display: block;
+	clear: both;
+	content: '';
+	}
+
+#panels label {
+	display: inline-block;
+	float: left;
+	color: #ef9d26;
+	border: 1px solid /*#ef9d26;*/#5f2568;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 6px 25px;
+	}
+
+#panels label:hover {
+	background-color: rgba(255,255,255,.1);
+	}
+
+#panels > div {
+	display: none;
+	background-color: #fff;
+	border: 1px solid /*#ef9d26;*/#5f2568;
+	padding: 20px;
+	margin-bottom: 20px;
+	}
+
+#panels input {
+	display: none;
+	}
+
+#panels > input[id="tab1"]:checked ~ nav label[for="tab1"],
+#panels > input[id="tab2"]:checked ~ nav label[for="tab2"],
+#panels > input[id="tab3"]:checked ~ nav label[for="tab3"] {
+	color: #fff;
+	background-color: /*#ef9226;*/ #5f2568;
+	}
+
+#panels > input[id="tab1"]:checked ~ div[id="panel1"],
+#panels > input[id="tab2"]:checked ~ div[id="panel2"],
+#panels > input[id="tab3"]:checked ~ div[id="panel3"]{
+	display: block;
+	}
+
+
+/****************************PRODUCTS SECTION STYLES************************************/
+main > h1{
+	color: #5f2568;
+}
+
+h2 {
+	color: #3146bd;
+	font-size: 1.3em;
+	margin: 1em 0 0.75em 0;
+	/*text-align: center;*/
+	}
+
+.table {
+	/*margin-left: 17%;*/
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	/*border: thin black solid;*/
+	justify-content: center;
+}
+.table > section{
+	/*border: thin blue solid;*/
+	padding: 0;
+	margin: 0;
+	
+}
+
+.productpage {
+	display: inline-block;
+	position: relative;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	padding: 10px;
+	text-align: center;
+	/*font-style: italic;*/
+	/*font-size: smaller;*/
+	text-indent: 0;
+	/*border: thin silver solid;*/
+	width: 200px;
+}
+
+a.landmark{
+	color: #444444;
+	font-style: italic; 
+	text-decoration: none; 
+}
+
+a.landmark {
+	display: inline-block;
+	position: relative;
+	width: 180px;
+	height: 230px;
+	/*margin: 8px;*/
+	border: 5px solid #e7e2c9;
+}
+
+a.landmark > span {
+	display: block;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 170px;
+	color: /*rgba(255,255,255,.8)*/ #fff;
+	background-color: rgba(0,0,0,.5);
+	font-size: .9em;
+	line-height: 2.5em;
+	/*text-transform: uppercase;*/
+	text-align: center;
+}
+
+a.landmark > span em {
+	display: none;	
+	margin-top: -13px;
+	color: /*rgba(255,255,255,.5)*/ #fff;
+	line-height: 2em;
+	font-size: 11px;
+	font-style: italic;
+}
+
+a.landmark:hover {
+	border-color: #b37eb5;
+}
+
+a.landmark:hover > span {
+	background-color: #000000;
+	
+}
+
+a.landmark:hover > span:hover em {
+	display: block;
+	padding-top: 8px;
+}
+
+figcaption {
+	font-size: 12px;
+}
+
+figcaption > p {
+	display: flex;
+	flex-direction: row;
+}
+
+/******************************* Ian's Dumb Ass Shit ******************/
+#products, #info{
+    display: flex;
+    flex-direction: row;
+}
+#products{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product p {
+	margin: 10px;
+}
+.product > a {
+	text-decoration: none;
+	color: #000;
+}
+.product > p {
+	display: block;
+	position: relative;
+	left: 0px;
+	bottom: 0px;
+	width: 500px;
+	/*color: black;
+	background-color: rgba(0,0,0,.5);*/
+	font-size: .9em;
+	line-height: 2.5em;
+	/*text-transform: uppercase;*/
+	text-align: center;
+
+}
+
+.landmark2 {
+	display: inline-block;
+	position: relative;
+	width: 480px;
+	height: 300px;
+	margin: 10px;
+	border: 5px solid #a5a5a5;
+
+}
+a.landmark2:hover{
+	border-color: #5f2568;
+}
+
+/************************************COMMENTS SECTION STYLES******************************/
+section {
+	display: flex;
+	flex-direction: row;
+	margin: 0 15px;
+	margin-bottom: 30px;
+	/*border: thin red solid;*/
+	}
+
+section > div {
+	flex-basis: 0;
+	flex-grow: 1;
+	/*padding: 10px;*/
+	padding-right: 10px;
+	padding-left: 18px;
+	border-width: 0 1px 0 0;
+	border-style: solid;
+	}
+	
+section > div:last-of-type{
+	border: none;
+}
+
+
+
+/*section div h2 {
+	border-bottom: 1px solid rgba(255,255,255,.2);
+	font-size: 1.2em;
+	}*/
+	
+section div p {
+	font-style: italic;
+	font-size: 12px;
+}
+
+hr {
+	display: none;
+}
+
+/************************************FOOTER STYLES********************************************/
+footer{
+	color: white;
+    background-color: #5f2568;
+    padding: 1em 0 0 0 ;
+    font-size: 0.8em;
+    /*font-style: italic;*/
+    display: flex;
+    justify-content: center;
+	margin: 20px 0 0 0;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    /*color: #fcf5e7;*/
+	border-width: 1px 0 0 0;
+	border-style: solid;
+}
+
+footer > section{
+    padding: 1em;
+	/*border: thin red solid;*/
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+}
+footer a{
+	color: rgba(255, 255, 255, 0.769);
+}
+footer a:hover{
+	color: white;
+}
+
+.mobile {
+	display: none;
+}
+
+/********************************** HARRY STYLES **************************/
+/********************************** ... **********************************/
+/****************************** JUST KIDDING *****************************/
+/************************* MOBILE MEDIA QUERY AND STYLES ****************/
+@media screen and (max-width: 768px) {
+	/*****HAMBURGER MENU STYLES*****/
+	.hamburger, .toggle-menu {
+		display: block;
+	}
+	
+	.header {
+		padding: 10px 20px;
+	}
+	
+	.menu {
+		justify-content: start;
+		flex-direction: column;
+		align-items: center;
+		position: fixed;
+		top: 0;
+		right: -300px;
+		background-color: #fff;
+		width: 300px;
+		height: 100%;
+		padding-top: 65px;
+	}
+	
+	.menu li {
+		width: 100%;
+	}
+	
+	.menu li a{
+		padding: 30px;
+		font-size: 18px;
+		box-shadow: 0 1px 0 rgba(225,225,225,0.1) inset;
+	}
+	
+		/****HERO IMAGE STYLES*****/
+	.info > h1 {
+		font-size: 35px;
+
+	}
+	
+	.info > h2 {
+		font-size: 1.03rem;
+
+	}
+	
+	.info > p{
+		font-size: 0.95rem;
+		max-width: 100%;
+	}
+	
+	/*****PRODUCTS SECTION STYLES*****/
+	a.landmark {
+		border: 5px solid #b37eb5;
+	}
+	
+	a.landmark > span {
+		background-color: rgba(0,0,0,.5);
+		display: none;
+	}
+	
+	a.landmark > span em {
+		display: none;
+		background-color: rgba(0,0,0,.5);
+	}
+
+	.productpage {
+	border: thin silver solid;
+	}
+	
+	.productpage:nth-of-type(even) {
+		border: thin silver solid;
+		margin-left: 10px;
+	}
+	
+	section {
+		flex-direction: column;
+	}
+	
+	section > div {
+		/*border-width: 0 0 1px 0;*/
+		border: none;
+		padding: 18px;
+	}
+	
+	.table > section{
+		flex-direction: row;
+		/*border: thin blue solid;*/
+	}
+	
+	/*****COMMENTS SECTION STYLES*****/
+	hr {
+		display: block;
+		height: 2px;
+		background-image: linear-gradient(to right, rgba(225,255,255,0), rgba(0,0,0,0.5), rgba(0,0,0,.5), rgba(255,255,255,0));
+		border: 0;
+		margin: 30px 15%;
+	}
+	
+	/*****FOOTER STYLES*****/
+	footer > section:last-of-type {
+		display: none;
+	}
+	
+	footer span {
+		display: none;
+	}
+	
+	.mobile {
+		display: block;
+	}
+
+	/*section > div {
+		padding: 0 14px 0 80px;
+	}*/
+
+	/*section div h2 {
+		margin-left: -65px;
+	}*/
+	
+
+
+}
+
+@media only screen and (max-width: 1207px){
+    .hamburger, .toggle-menu {
+		display: block;
+	}
+	
+	.header {
+		padding: 10px 20px;
+	}
+	
+	.menu {
+		justify-content: start;
+		flex-direction: column;
+		align-items: center;
+		position: fixed;
+		top: 0;
+		right: -300px;
+		background-color: #fff;
+		width: 300px;
+		height: 100%;
+		padding-top: 65px;
+	}
+	
+	.menu li {
+		width: 100%;
+	}
+	
+	.menu li a{
+		padding: 30px;
+		font-size: 18px;
+		box-shadow: 0 1px 0 rgba(225,225,225,0.1) inset;
+	}
+	.menu li p{
+		padding: 30px;
+		font-size: 18px;
+		box-shadow: 0 1px 0 rgba(225,225,225,0.1) inset;
+		box-shadow: 0 -5px 0px 		#bf68ee inset;
+	}
+}
